@@ -1,3 +1,4 @@
+import SEO from "../components/SEO";
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { Link } from "react-router-dom";
@@ -111,6 +112,7 @@ export default function Work() {
 
   return (
     <main className="pt-24 bg-white">
+      <SEO title="Our Work & Portfolio | Grantho Technologies" description="Explore our portfolio of successful software, web, and mobile app projects." url="https://grantho.com/work" />
 
       {/* ── Hero ── */}
       <section className="relative overflow-hidden py-28 px-6" style={{ minHeight: "58vh", display: "flex", alignItems: "center", backgroundColor: "#05132b" }}>
@@ -322,3 +324,4 @@ export default function Work() {
     </main>
   );
 }
+

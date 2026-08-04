@@ -1,3 +1,4 @@
+import SEO from "../components/SEO";
 import { motion } from "motion/react";
 import { Link } from "react-router-dom";
 import { ArrowRight, Send, Briefcase } from "lucide-react";
@@ -25,6 +26,7 @@ const PERKS = [
 export default function Careers() {
   return (
     <main className="pt-24 bg-white">
+      <SEO title="Careers | Grantho Technologies" description="Join Grantho Technologies in Coimbatore. We are hiring talented developers, designers, and engineers." url="https://grantho.com/careers" />
 
       {/* ── Hero ── */}
       <section className="relative overflow-hidden py-28 px-6" style={{ minHeight: "60vh", display: "flex", alignItems: "center", backgroundColor: "#05132b" }}>
@@ -247,3 +249,4 @@ export default function Careers() {
     </main>
   );
 }
+

@@ -16,6 +16,7 @@ import clientLogo5 from "@/imports/Screenshot_2026-04-21_220152.png";
 import clientLogo6 from "@/imports/3117bca68a8b252687000efeea5789935cca280d.png";
 import { SOLUTIONS, SPORTS_CAPABILITIES, STATS, CLIENT_LOGOS, PROCESS_STEPS, WHY_GRANTHOR, FAQS, INDUSTRIES } from "../data";
 import { Trophy, Code2, Globe, Smartphone, Brain, Cpu, TrendingUp, GraduationCap, HeartPulse, ShoppingBag, Factory, Building2, Hotel, Rocket, Briefcase, Users, Wifi, Zap } from "lucide-react";
+import SEO from "../components/SEO";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -1002,6 +1003,18 @@ function FinalCTA() {
 export default function Home() {
   return (
     <main className="bg-white">
+      <SEO 
+        title="Grantho Technologies | Custom Software & Web Development Company" 
+        description="Grantho Technologies is a premier custom software and web development agency based in Coimbatore, Tamil Nadu, delivering scalable digital solutions globally."
+        schema={JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Grantho Technologies",
+          "url": "https://grantho.com",
+          "logo": "https://grantho.com/favicon.png",
+          "sameAs": []
+        })}
+      />
       <PremiumHero />
       <SolutionsShowcase />
 

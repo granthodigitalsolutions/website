@@ -4,6 +4,7 @@ import { Mail, Phone, MapPin, Send, CheckCircle2, Plus, Minus } from "lucide-rea
 import ScrollReveal from "../components/ScrollReveal";
 import MagneticButton from "../components/MagneticButton";
 import { COMPANY, FAQS } from "../data";
+import SEO from "../components/SEO";
 
 const SERVICES = [
   "Sports Technology", "Custom Software", "Website Development",
@@ -36,6 +37,23 @@ export default function Contact() {
 
   return (
     <main className="pt-24 bg-white">
+      <SEO 
+        title="Contact Us | Grantho Technologies" 
+        description="Get in touch with Grantho Technologies in Coimbatore to discuss custom software development, mobile apps, or enterprise solutions for your business."
+        url="https://grantho.com/contact"
+        schema={JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          "name": "Grantho Technologies",
+          "image": "https://grantho.com/favicon.png",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Coimbatore",
+            "addressRegion": "Tamil Nadu",
+            "addressCountry": "IN"
+          }
+        })}
+      />
 
       {/* ── Hero ── */}
       <section className="relative overflow-hidden py-24 px-6" style={{ minHeight: "50vh", display: "flex", alignItems: "center", backgroundColor: "#05132b" }}>

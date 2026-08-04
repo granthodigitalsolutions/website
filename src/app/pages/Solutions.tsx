@@ -1,3 +1,4 @@
+import SEO from "../components/SEO";
 import { motion } from "motion/react";
 import { Link } from "react-router-dom";
 import { ArrowRight, ArrowUpRight, Code2, Globe, Smartphone, Brain, Cpu, TrendingUp, CheckCircle2 } from "lucide-react";
@@ -81,6 +82,7 @@ const SECTIONS = [
 export default function Solutions() {
   return (
     <main className="pt-24 bg-white">
+      <SEO title="Software Solutions & Web Development | Grantho Technologies" description="We offer bespoke enterprise software, mobile app development, and scalable web solutions globally from Coimbatore." url="https://grantho.com/solutions" />
 
       {/* ── Hero ── */}
       <section className="relative overflow-hidden py-28 px-6" style={{ minHeight: "58vh", display: "flex", alignItems: "center", backgroundColor: "#05132b" }}>
@@ -275,3 +277,4 @@ export default function Solutions() {
     </main>
   );
 }
+

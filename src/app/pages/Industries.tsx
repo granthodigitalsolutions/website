@@ -1,3 +1,4 @@
+import SEO from "../components/SEO";
 import { motion } from "motion/react";
 import { Link } from "react-router-dom";
 import { ArrowRight, Trophy, GraduationCap, HeartPulse, ShoppingBag, Factory, Building2, Hotel, Rocket, Briefcase, Users } from "lucide-react";
@@ -15,6 +16,7 @@ export default function Industries() {
 
   return (
     <main className="pt-24 bg-white">
+      <SEO title="Industries We Serve | Grantho Technologies" description="Custom technology solutions for sports, retail, healthcare, manufacturing, and more." url="https://grantho.com/industries" />
 
       {/* ── Hero ── */}
       <section className="relative overflow-hidden py-28 px-6" style={{ minHeight: "58vh", display: "flex", alignItems: "center", backgroundColor: "#05132b" }}>
@@ -213,3 +215,4 @@ export default function Industries() {
     </main>
   );
 }
+

@@ -4,6 +4,7 @@ import { motion, useScroll, useTransform } from "motion/react";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
 import ScrollReveal, { StaggerContainer, StaggerItem } from "../components/ScrollReveal";
 import { CORE_VALUES } from "../data";
+import SEO from "../components/SEO";
 
 const TIMELINE = [
   { year: "2025", event: "Grantho Technologies Founded", detail: "Established with a mission to engineer intelligent digital solutions for sports organizations and ambitious businesses." },
@@ -30,6 +31,11 @@ export default function About() {
 
   return (
     <main className="pt-24 bg-white">
+      <SEO 
+        title="About Us | Grantho Technologies" 
+        description="Learn about the mission, vision, and team driving digital innovation at Grantho Technologies, a leading software agency based in Coimbatore."
+        url="https://grantho.com/about"
+      />
 
       {/* ── Hero ── */}
       <section ref={heroRef} className="relative overflow-hidden py-28 px-6" style={{ minHeight: "60vh", display: "flex", alignItems: "center", backgroundColor: "#05132b" }}>

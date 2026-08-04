@@ -1,3 +1,4 @@
+import SEO from "../components/SEO";
 import { motion } from "motion/react";
 import { Link } from "react-router-dom";
 import { ArrowRight, ArrowUpRight, Trophy, Users, Calendar, CreditCard, BarChart3, Wifi, Award, ClipboardList } from "lucide-react";
@@ -79,6 +80,7 @@ const PROCESS_FLOW = [
 export default function SportsTech() {
   return (
     <main className="pt-24 bg-white">
+      <SEO title="Sports Technology Solutions | Grantho Technologies" description="Empowering the sports industry with advanced data analytics, fan engagement platforms, and management software." url="https://grantho.com/sports-technology" />
 
       {/* ── Hero ── */}
       <section className="relative overflow-hidden py-28 px-6" style={{ minHeight: "65vh", display: "flex", alignItems: "center", backgroundColor: "#05132b" }}>
@@ -358,3 +360,4 @@ export default function SportsTech() {
     </main>
   );
 }
+
